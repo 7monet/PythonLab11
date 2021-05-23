@@ -1,0 +1,7 @@
+
+{% extends "kontent.html" %}
+{% block content %}
+  {% for post in posty %}
+    <div><p>{{post.author.username}} napisal: <b>{{ post.tresc}}</b></p></div>
+  {% endfor %}
+{% endblock %}
